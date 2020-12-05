@@ -39,13 +39,17 @@ You might prepare by writing down your own answers before hand.
     I have implemented "inheritance" by making use of "extends" keyword thus inheriting all of the methods into the current interface class.
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those
    step correlate to running a JavaScript application.
-    1- javac <package-name>/*.java     // **Runs the java compiler to create .class files containing the bytecode for each .java file // In 
-    2- java cvfe <jar-filename.jar> <package-name.Main> <package-name/*.class>  // **Creates our .jar file archiving all of our .class files in it for easy distribution.
+  -  1- javac <package-name>/*.java     // **Runs the java compiler to create .class files containing the bytecode for each .java file // In 
+   
+   - 2- java cvfe <jar-filename.jar> <package-name.Main> <package-name/*.class>  // **Creates our .jar file archiving all of our .class files in it for easy distribution.
     c - create a jar file
     v - generate verbose output for each file
     f - specific jar output file to be create <jar-filename.jar>
     e - sets the main class also called the Entry point in this case "<package-name.Main>"
-    3- java -jar <jar-filename.jar> // Executes our program by launching JVM (Java Virtual Machine), <jar-filename.jar> is our application name.
+   
+   - 3- java -jar <jar-filename.jar> // Executes our program by launching JVM (Java Virtual Machine), <jar-filename.jar> is our application name.
+
+   - Instead of compiling in this traditional explicit way, when we use IntelliJ it compiles on the fly and remove this explicit compilation. Similarly Javascript is compiled on the fly, when the script is loaded the first thing that Javascript engine compilation does is compile into a bytecode and then execute it.
 3. Explain how Java being a strongly typed language affected you solution.
     I was able to produce a total of piggybank coins by storing the value as a double data type and this a great advantage of strongly typed language that we have to specify a data type to every variable.
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your
