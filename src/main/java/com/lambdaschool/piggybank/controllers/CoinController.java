@@ -26,7 +26,8 @@ public class CoinController
         coinrepos.findAll().iterator().forEachRemaining(coinList::add);
         return new ResponseEntity<>(coinList, HttpStatus.OK);
     }
-
+     
+    // http://localhost:2019/total
     @GetMapping (value = "/total", produces = "application/json")
     public ResponseEntity<?> listTotalCoins()
     {

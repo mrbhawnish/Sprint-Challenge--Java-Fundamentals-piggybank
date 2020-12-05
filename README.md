@@ -34,12 +34,25 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+    I have created many classes, thus used "abstraction" in that sense. I have implemented "encapsulation" by binding all code and data together i.e. grouped the fields and methods together into one single class for a single entity.
+    I have also implemented "polymorphism" by having multiple forms of a contructor that can take various parameters resulting in distinct behavior.
+    I have implemented "inheritance" by making use of "extends" keyword thus inheriting all of the methods into the current interface class.
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those
    step correlate to running a JavaScript application.
+    1- javac <package-name>/*.java     // **Runs the java compiler to create .class files containing the bytecode for each .java file // In 
+    2- java cvfe <jar-filename.jar> <package-name.Main> <package-name/*.class>  // **Creates our .jar file archiving all of our .class files in it for easy distribution.
+    c - create a jar file
+    v - generate verbose output for each file
+    f - specific jar output file to be create <jar-filename.jar>
+    e - sets the main class also called the Entry point in this case "<package-name.Main>"
+    3- java -jar <jar-filename.jar> // Executes our program by launching JVM (Java Virtual Machine), <jar-filename.jar> is our application name.
 3. Explain how Java being a strongly typed language affected you solution.
+    I was able to produce a total of piggybank coins by storing the value as a double data type and this a great advantage of strongly typed language that we have to specify a data type to every variable.
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your
    application?
-
+     Classes can inherit from multiple interfaces but only a single abstract class.
+     Abstract classes can contain fields; interfaces should not.
+     Abstract classes can implement methods that get shared across classes and interfaces only give method headers but not the actual implementation. 
 ## Instructions
 
 ### Task 1: Project Set Up
